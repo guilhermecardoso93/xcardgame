@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', () => {
       img: './images/4.png'
     },
     {
-      name: 'ciclope',
+      name: 'ciplope',
       img: './images/4.png'
     },
     {
@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', () => {
     resultDisplay.textContent = pairs.length
 
     if (pairs.length == cardArray.length / 2) {
-      resultDisplay.textContent = 'Parabéns! Você encontrou todos os pares!'
+      resultDisplay.textContent = 'Parabéns Você Ganhou!'
     }
   }
 

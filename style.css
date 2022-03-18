@@ -6,7 +6,7 @@
 
 body {
   background-image: url('https://wallpaperaccess.com/full/1186847.jpg');
-  background-size: cover;
+  background-size:100vw;
   background-repeat: no-repeat;
 }
 
@@ -21,7 +21,10 @@ main {
   height: 55rem;
   padding-top: 7rem;
 
-  border-radius: 50px;
+  border-radius: 40px;
+  background-image: url('https://wallpaperaccess.com/full/1186847.jpg');
+  background-size:100vw;
+  background-repeat: no-repeat;
 }
 
 .jogo {
@@ -185,7 +188,7 @@ main {
   }
 
   100% {
-    background: rgba(228, 237, 244, 1) 91%;
+    background: rgba(228, 237, 244, 0.4945553221288515) 91%;
   }
 }
 
