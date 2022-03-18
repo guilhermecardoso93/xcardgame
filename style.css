@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/1186847.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  margin: 5rem;
+  margin-bottom: 1rem;
+  height: 55rem;
+  padding-top: 7rem;
+
+  border-radius: 50px;
+}
+
+.jogo {
+  padding-top: 6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    'grid grid grid grid grid grid grid grid grid '
+    'grid grid grid grid grid grid grid grid grid '
+    'grid grid grid grid grid grid grid grid grid'
+    'grid grid grid grid grid grid grid grid grid ';
+  margin: 0 5rem;
+}
+
+.grid {
+  grid-area: grid;
+  margin: 0 1rem 5rem 5em;
+}
+
+.grid img {
+  width: 10rem;
+  margin: 0.2rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.grid img:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(15px 10px 5px rgba(0, 0, 0, 0.5));
+}
+
+.placar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -30rem;
+  right: -45rem;
+  gap: 1rem;
+  transform: rotate(90deg);
+}
+
+.placar h3 {
+  font-family: 'Fredoka', sans-serif;
+  color: rgb(8, 48, 122);
+  font-size: 3rem;
+}
+
+.logoX {
+  width: 20rem;
+}
+
+/*mobileS*/
+@media (min-width: 320px) and (max-width: 800px) {
+  main {
+    height: 15rem;
+  }
+}
+
+/*mobileM*/
+@media (min-width: 375px) and (max-width: 900px) {
+  main {
+    height: 15rem;
+  }
+}
+
+/*mobileL*/
+@media (min-width: 425px) and (max-width: 950px) {
+  main {
+    height: 15rem;
+  }
+}
+
+/*tablet*/
+@media (min-width: 768px) {
+  main {
+    height: 15rem;
+  }
+}
+
+/*laptop*/
+@media (min-width: 1024px) {
+  main {
+    height: 35rem;
+  }
+
+  .grid img {
+    width: 6rem;
+    margin: 0.5rem;
+    transition: all 0.5s;
+  }
+
+  .placar {
+    top: -25rem;
+    right: -32rem;
+  }
+
+  .placar h3 {
+    font-size: 2.5rem;
+  }
+
+  .logoX {
+    width: 15rem;
+  }
+}
+
+/*laptopL*/
+@media (min-width: 1440px) {
+  main {
+    height: 52rem;
+    margin: 5rem;
+    margin-bottom: 1rem;
+    height: 55rem;
+    padding-top: 7rem;
+  }
+
+  .grid img {
+    width: 10rem;
+    margin: 0.2rem;
+  }
+
+  .placar {
+    top: -30rem;
+    right: -45rem;
+  }
+
+  .placar h3 {
+    font-size: 3rem;
+  }
+
+  .logoX {
+    width: 20rem;
+  }
+}
+
+/*desktop*/
+@media (min-width: 2560px) {
+  main {
+    height: 55rem;
+  }
+}
+
+.color-change-3x {
+  -webkit-animation: color-change-3x 4s linear infinite alternate both;
+  animation: color-change-3x 4s linear infinite alternate both;
+}
+
+@-webkit-keyframes color-change-3x {
+  0% {
+    background: rgba(223, 239, 240, 0.3225665266106442) 28%;
+  }
+
+  50% {
+    background: rgba(163, 214, 217, 0.2945553221288515) 58%;
+  }
+
+  100% {
+    background: rgba(228, 237, 244, 1) 91%;
+  }
+}
+
+@keyframes color-change-3x {
+  0% {
+    background: rgba(223, 239, 240, 0.3225665266106442) 28%;
+  }
+
+  50% {
+    background: rgba(163, 214, 217, 0.2945553221288515) 58%;
+  }
+
+  100% {
+    background: rgba(228, 237, 244, 1) 91%;
+  }
+}
